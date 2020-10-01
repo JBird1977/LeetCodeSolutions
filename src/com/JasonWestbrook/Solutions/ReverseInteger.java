@@ -40,10 +40,4 @@ public class ReverseInteger
             return 0;
         }
     }
-
-    public static void main(String[] args)
-    {
-        int answer = solution(1534236469);
-        System.out.println("The answer is: " + answer);
-    }
 }

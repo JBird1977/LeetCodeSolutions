@@ -24,16 +24,4 @@ public class RunningSumOf1DArray
         }
         return answer;
     }
-
-    public static void main(String[] args)
-    {
-        int[] nums = {1,2,3,4,5};
-        int[] solution;
-        solution = runningSum(nums);
-        System.out.println("The answer is: ");
-        for (int i = 0; i < solution.length; i++)
-        {
-            System.out.println(solution[i]);
-        }
-    }
 }

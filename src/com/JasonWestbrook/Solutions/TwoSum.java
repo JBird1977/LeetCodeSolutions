@@ -16,8 +16,7 @@ public class TwoSum
         int[] answer = {0,0};
         boolean indiciesFound = false;
 
-
-            for (int firstIndex = 0; firstIndex < nums.length; firstIndex++)
+        for (int firstIndex = 0; firstIndex < nums.length; firstIndex++)
             {
                 for (int secondIndex = 0; secondIndex <nums.length; secondIndex++)
                 {
@@ -37,26 +36,7 @@ public class TwoSum
                 {
                     break;
                 }
-
             }
-
-
         return answer;
-
-
-
-
-    }
-
-    public static void main(String[] args)
-    {
-        int[] nums = {3,2,5,8,9,10,4};
-        int target = 6;
-
-        int[] answer = twoSum(nums, target);
-        System.out.println("The answer is: " + answer[0] + " " + answer[1]);
-
-
-
     }
 }
