@@ -10,7 +10,7 @@ package com.JasonWestbrook.Solutions;
 
 public class TwoSum
 {
-    public static int[] twoSum(int[] nums, int target)
+    public static int[] solution(int[] nums, int target)
     {
         int testSum = 0;
         int[] answer = {0,0};

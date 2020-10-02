@@ -7,7 +7,7 @@ package com.JasonWestbrook.Solutions;
 
 public class RunningSumOf1DArray
 {
-    public static int[] runningSum(int[] nums)
+    public static int[] solution(int[] nums)
     {
         int currentSum = 0;
         int[] answer = new int[nums.length];
