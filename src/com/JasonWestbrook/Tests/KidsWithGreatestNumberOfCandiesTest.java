@@ -24,5 +24,33 @@ class KidsWithGreatestNumberOfCandiesTest
         assertIterableEquals(expected, actual);
     }
 
+    @Test
+    public void exampleTwo()
+    {
+        List <Boolean> expected = new ArrayList<>();
+        expected.add(true);
+        expected.add(false);
+        expected.add(false);
+        expected.add(false);
+        expected.add(false);
+        int[] candies = {4,2,1,1,2};
+        int extraCandies = 1;
+        List<Boolean> actual = solution(candies, extraCandies);
+        assertIterableEquals(expected, actual);
+    }
+
+    @Test
+    public void exampleThree()
+    {
+        List <Boolean> expected = new ArrayList<>();
+        expected.add(true);
+        expected.add(false);
+        expected.add(true);
+        int[] candies = {12, 1, 12};
+        int extraCandies = 10;
+        List<Boolean> actual = solution(candies, extraCandies);
+        assertIterableEquals(expected, actual);
+    }
+
 
 }

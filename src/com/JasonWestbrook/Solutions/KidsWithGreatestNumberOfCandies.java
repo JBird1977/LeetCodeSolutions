@@ -1,5 +1,6 @@
 package com.JasonWestbrook.Solutions;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -22,13 +23,28 @@ public class KidsWithGreatestNumberOfCandies
 
     public static List<Boolean> solution(int[] candies, int extraCandies)
     {
-        List<Boolean> candyCheck = new ArrayList<>();
-        candyCheck.add(true);
-        candyCheck.add(true);
-        candyCheck.add(true);
-        candyCheck.add(false);
-        candyCheck.add(true);
+        int largestAmountOfCandy = 0;
+        List<Boolean> isKidAbleToHaveMostCandy = new ArrayList<>();
+        for (int candy : candies)
+        {
+            if (candy > largestAmountOfCandy)
+            {
+                largestAmountOfCandy = candy;
+            }
+        }
 
-        return candyCheck;
+        for(int candy : candies)
+        {
+            if (candy + extraCandies >= largestAmountOfCandy)
+            {
+                isKidAbleToHaveMostCandy.add(true);
+            }
+            else
+            {
+                isKidAbleToHaveMostCandy.add(false);
+            }
+        }
+
+        return isKidAbleToHaveMostCandy;
     }
 }
