@@ -14,4 +14,22 @@ class ShuffleTheArrayTest
         int[] actual = solution(nums, n);
         assertArrayEquals(expected, actual);
     }
+    @Test
+    void testExampleTwo()
+    {
+        int[] nums = {1,2,3,4,4,3,2,1};
+        int n = 4;
+        int[] expected = {1,4,2,3,3,2,4,1};
+        int[] actual = solution(nums, n);
+        assertArrayEquals(expected, actual);
+    }
+    @Test
+    void testExampleThree()
+    {
+        int[] nums = {1,1,2,2};
+        int n = 2;
+        int[] expected = {1,2,1,2};
+        int[] actual = solution(nums, n);
+        assertArrayEquals(expected, actual);
+    }
 }

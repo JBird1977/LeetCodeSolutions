@@ -15,7 +15,22 @@ public class ShuffleTheArray
 {
     public static int[] solution(int[] nums, int n)
     {
-        int[] answer = {2,3,5,4,1,7};
+        int[] answer = new int[nums.length];
+        int firstHalfIndex = 0;
+        int secondHalfIndex = n;
+        int answerIndex = -1;
+
+
+        while (answerIndex < nums.length-1)
+        {
+
+            answerIndex++;
+            answer[answerIndex] = nums[firstHalfIndex];
+            answerIndex++;
+            answer[answerIndex] = nums[secondHalfIndex];
+            firstHalfIndex++;
+            secondHalfIndex++;
+        }
         return answer;
     }
 
