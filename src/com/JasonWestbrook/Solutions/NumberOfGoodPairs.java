@@ -11,8 +11,30 @@ package com.JasonWestbrook.Solutions;
 
 public class NumberOfGoodPairs
 {
-    public static int numIdenticalPairs(int[] nums)
+    public static int solution(int[] nums)
     {
-        return 4;
+        int pairCount = 0;
+        int i = 0;
+        boolean resetLoop = false;
+
+        while (i < nums.length)
+        {
+            for (int j = 0; j<nums.length; j++)
+            {
+                if(resetLoop)
+                {
+                    j = i;
+                    resetLoop = false;
+                }
+                if((i<j) && nums[i] == nums[j])
+                {
+                    pairCount++;
+                }
+
+            }
+            i++;
+            resetLoop = true;
+        }
+        return pairCount;
     }
 }
