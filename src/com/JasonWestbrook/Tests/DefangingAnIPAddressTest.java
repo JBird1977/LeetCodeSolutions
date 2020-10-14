@@ -14,6 +14,15 @@ class DefangingAnIPAddressTest
         String expected = "1[.]1[.]1[.]1";
         String actual = solution(address);
         assertEquals(expected, actual);
-
     }
+
+    @Test
+    public void exampleTwo()
+    {
+        String address = "255.100.50.0";
+        String expected = "255[.]100[.]50[.]0";
+        String actual = solution(address);
+        assertEquals(expected, actual);
+    }
+
 }
