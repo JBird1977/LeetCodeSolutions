@@ -23,10 +23,7 @@ public class DefangingAnIPAddress
                 result[j] = address.charAt(i);
             }
         }
-        String answer = new String(result);
-        System.out.println(answer);
-
-        return answer;
+        return new String(result);
     }
 
 }
